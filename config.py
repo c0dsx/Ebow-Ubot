@@ -146,16 +146,16 @@ class Config(object):
         "ʜᴇʏ, sᴀʏᴀ ᴘᴇɴɢɢᴜɴᴀ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ")
 
     # Default .alive name
-    ALIVE_NAME = getenv("ALIVE_NAME", "EbowXs")
+    ALIVE_NAME = getenv("ALIVE_NAME", "Ebow")
 
     # Custom Emoji Alive
-    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "😈")
+    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "")
 
     # Custom Emoji Alive
-    INLINE_EMOJI = getenv("INLINE_EMOJI", "•")
+    INLINE_EMOJI = getenv("INLINE_EMOJI", "")
 
     # Custom icon HELP
-    ICON_HELP = getenv("ICON_HELP", "•")
+    ICON_HELP = getenv("ICON_HELP", "")
 
     # Time & Date - Country and Time Zone
     COUNTRY = str(getenv("COUNTRY", "ID"))
