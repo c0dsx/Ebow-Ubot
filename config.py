@@ -53,6 +53,8 @@ GCAST_BLACKLIST = [
     -1001572486389,  # PluviaMusicGroup
     -1001608701614,  # UputtSupport
     -1001812143750,  # Kynan Support
+    -1001863887795,  # PrivateTN
+    -1001843069145,  #PrivateYSD
 ]
 
 
@@ -77,7 +79,7 @@ class Config(object):
     # For Blacklist Group Support
     BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
     if not BLACKLIST_CHAT:
-        BLACKLIST_CHAT = [-1001473548283, -1001675396283]
+        BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1002107270136]
 
     # Userbot Session String
     STRING_SESSION = getenv("STRING_SESSION", None)
@@ -98,8 +100,8 @@ class Config(object):
     SUDO_HANDLER = getenv("SUDO_HANDLER", r"$")
 
     # Support
-    GROUP = getenv("GROUP", "AyiinChats")
-    CHANNEL = getenv("CHANNEL", "AyiinChannel")
+    GROUP = getenv("GROUP", "VirtualGanks")
+    CHANNEL = getenv("CHANNEL", "c0dsx")
 
     # Heroku Credentials for updater.
     HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -113,7 +115,7 @@ class Config(object):
     GITHUB_ACCESS_TOKEN = getenv("GITHUB_ACCESS_TOKEN", None)
 
     # Custom (forked) repo URL for updater.
-    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Ayiin-Userbot.git")
+    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/c0dsx/Ebow-Userbot.git")
 
     # Custom Name Sticker Pack
     S_PACK_NAME = getenv("S_PACK_NAME", None)
@@ -144,19 +146,19 @@ class Config(object):
     # untuk perintah teks costum .alive
     ALIVE_TEKS_CUSTOM = getenv(
         "ALIVE_TEKS_CUSTOM",
-        "Hey, Saya pengguna Ayiin-Userbot")
+        "ʜᴇʏ, sᴀʏᴀ ᴘᴇɴɢɢᴜɴᴀ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ")
 
     # Default .alive name
-    ALIVE_NAME = getenv("ALIVE_NAME", "AyiinXd")
+    ALIVE_NAME = getenv("ALIVE_NAME", "EbowXs")
 
     # Custom Emoji Alive
-    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "✧")
+    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "😈")
 
     # Custom Emoji Alive
-    INLINE_EMOJI = getenv("INLINE_EMOJI", "✵")
+    INLINE_EMOJI = getenv("INLINE_EMOJI", "•")
 
     # Custom icon HELP
-    ICON_HELP = getenv("ICON_HELP", "⍟")
+    ICON_HELP = getenv("ICON_HELP", "•")
 
     # Time & Date - Country and Time Zone
     COUNTRY = str(getenv("COUNTRY", "ID"))
@@ -176,17 +178,17 @@ class Config(object):
 
     # Default .alive logo
     ALIVE_LOGO = (getenv("ALIVE_LOGO")
-                or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg")
+                or "https://telegra.ph/file/b6b36504ef60ce9b10499.mp4")
 
     INLINE_PIC = (getenv("INLINE_PIC")
-                or "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg")
+                or "https://telegra.ph/file/2ed4614df857171aa3afb.jpg")
 
     # Picture For VCPLUGIN
     PLAY_PIC = (getenv("PLAY_PIC")
-                or "https://telegra.ph/file/6213d2673486beca02967.png")
+                or "https://telegra.ph/file/2ed4614df857171aa3afb.jpg")
 
     QUEUE_PIC = (getenv("QUEUE_PIC")
-                or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
+                or "https://telegra.ph/file/2ed4614df857171aa3afb.jpg")
 
     DEFAULT = list(map(int, b64decode("MTkwNTA1MDkwMw==").split()))
 
