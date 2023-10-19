@@ -46,7 +46,7 @@ async def autopilot():
     try:
         r = await Ayiin(
             CreateChannelRequest(
-                title="Aʏɪɪɴ-Usᴇʀʙᴏᴛ Lᴏɢs",
+                title="𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙇𝙤𝙜𝙨",
                 about="» Group log Created by: Ayiin-Userbot\n\n» Support : @AyiinChats\n» Support: @AyiinChannel",
                 megagroup=True,
             ),
@@ -65,7 +65,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/b88d710cee9a6d6783abc.jpg", "photoyins.jpg"
+            "https://telegra.ph/file/2ed4614df857171aa3afb.jpg", "photoyins.jpg"
         )
         ll = await Ayiin.upload_file(photo)
         try:
@@ -96,7 +96,7 @@ async def autobot():
         if who.username:
             username = f"{who.username}_bot"
         else:
-            username = f"Ayiin{(str(who.id))[5:]}bot"
+            username = f"Ebow{(str(who.id))[5:]}bot"
         bf = "@BotFather"
         await Ayiin(UnblockRequest(bf))
         await Ayiin.send_message(bf, "/cancel")
@@ -125,7 +125,7 @@ async def autobot():
                 sys.exit(1)
         filogo = random.choice(
             [
-                "https://telegra.ph/file/2127175807fe36f6a40f1.jpg",
+                "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
                 "AyiinXd/resources/logo.jpg",
             ]
         )
@@ -136,7 +136,7 @@ async def autobot():
         await asyncio.sleep(3)
         if isdone.startswith("Sorry,"):
             ran = randint(1, 100)
-            username = f"Ayiin{(str(who.id))[6:]}{str(ran)}bot"
+            username = f"Ebow{(str(who.id))[6:]}{str(ran)}bot"
             await Ayiin.send_message(bf, username)
             await asyncio.sleep(3)
             nowdone = (await Ayiin.get_messages(bf, limit=1))[0].text
@@ -165,7 +165,7 @@ async def autobot():
                 await Ayiin.send_message(bf, f"@{username}")
                 await asyncio.sleep(1)
                 await Ayiin.send_message(
-                    bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @AyiinChannel ✨"
+                    bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @c0dsx ✨"
                 )
                 await Ayiin.send_message(
                     var.BOTLOG_CHATID,
@@ -220,7 +220,7 @@ async def autobot():
             await Ayiin.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await Ayiin.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @AyiinChannel ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @c0dsx ✨"
             )
             await Ayiin.send_message(
                 var.BOTLOG_CHATID,
