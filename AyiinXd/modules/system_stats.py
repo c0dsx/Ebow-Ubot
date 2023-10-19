@@ -59,52 +59,52 @@ async def _(e):
 @ayiin_cmd(pattern=r"spc")
 async def psu(event):
     uname = platform.uname()
-    softw = "**Iɴғᴏʀᴍᴀsɪ Sɪsᴛᴇᴍ**\n"
-    softw += f"**Sɪsᴛᴇᴍ   :** `{uname.system}`\n"
-    softw += f"**Rɪʟɪs    :** `{uname.release}`\n"
-    softw += f"**Vᴇʀsɪ    :** `{uname.version}`\n"
-    softw += f"**Mᴇsɪɴ    :** `{uname.machine}`\n"
+    softw = "**ɪɴғᴏʀᴍᴀsɪ sɪsᴛᴇᴍ**\n"
+    softw += f"**sɪsᴛᴇᴍ   :** `{uname.system}`\n"
+    softw += f"**ʀɪʟɪs    :** `{uname.release}`\n"
+    softw += f"**ᴠᴇʀsɪ    :** `{uname.version}`\n"
+    softw += f"**ᴍᴇsɪɴ    :** `{uname.machine}`\n"
     # Boot Time
     boot_time_timestamp = psutil.boot_time()
     bt = datetime.fromtimestamp(boot_time_timestamp)
-    softw += f"**Wᴀᴋᴛᴜ Hɪᴅᴜᴘ:** `{bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
+    softw += f"**ᴡᴀᴋᴛᴜ ʜɪᴅᴜᴘ:** `{bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
     # CPU Cores
-    cpuu = "**Iɴғᴏʀᴍᴀsɪ CPU**\n"
-    cpuu += "**Pʜʏsɪᴄᴀʟ Cᴏʀᴇs   :** `" + \
+    cpuu = "**ɪɴғᴏʀᴍᴀsɪ CPU**\n"
+    cpuu += "**ᴘʜʏsɪᴄᴀʟ ᴄᴏʀᴇs   :** `" + \
         str(psutil.cpu_count(logical=False)) + "`\n"
-    cpuu += "**Tᴏᴛᴀʟ Cᴏʀᴇs      :** `" + \
+    cpuu += "**ᴛᴏᴛᴀʟ ᴄᴏʀᴇs      :** `" + \
         str(psutil.cpu_count(logical=True)) + "`\n"
     # CPU frequencies
     cpufreq = psutil.cpu_freq()
-    cpuu += f"**Mᴀx Fʀᴇǫᴜᴇɴᴄʏ    :** `{cpufreq.max:.2f}Mhz`\n"
-    cpuu += f"**Mɪɴ Fʀᴇǫᴜᴇɴᴄʏ    :** `{cpufreq.min:.2f}Mhz`\n"
-    cpuu += f"**Cᴜʀʀᴇɴᴛ Fʀᴇǫᴜᴇɴᴄʏ:** `{cpufreq.current:.2f}Mhz`\n\n"
+    cpuu += f"**ᴍᴀx ғʀᴇᴏ̨ᴜᴇɴᴄʏ    :** `{cpufreq.max:.2f}Mhz`\n"
+    cpuu += f"**ᴍɪɴ ғʀᴇᴏ̨ᴜᴇɴᴄʏ    :** `{cpufreq.min:.2f}Mhz`\n"
+    cpuu += f"**ᴄᴜʀʀᴇɴᴛ ғʀᴇᴏ̨ᴜᴇɴᴄʏ:** `{cpufreq.current:.2f}Mhz`\n\n"
     # CPU usage
-    cpuu += "**CPU Usᴀɢᴇ Pᴇʀ Cᴏʀᴇ**\n"
+    cpuu += "**CPU ᴜsᴀɢᴇ ᴘᴇʀ ᴄᴏʀᴇ**\n"
     for i, percentage in enumerate(psutil.cpu_percent(percpu=True)):
-        cpuu += f"**Cᴏʀᴇ {i}  :** `{percentage}%`\n"
-    cpuu += "**Tᴏᴛᴀʟ CPU Usᴀɢᴇ**\n"
-    cpuu += f"**Sᴇᴍᴜᴀ Cᴏʀᴇ:** `{psutil.cpu_percent()}%`\n"
+        cpuu += f"**ᴄᴏʀᴇ {i}  :** `{percentage}%`\n"
+    cpuu += "**ᴛᴏᴛᴀʟ CPU ᴜsᴀɢᴇ**\n"
+    cpuu += f"**sᴇᴍᴜᴀ ᴄᴏʀᴇ:** `{psutil.cpu_percent()}%`\n"
     # RAM Usage
     svmem = psutil.virtual_memory()
-    memm = "**Mᴇᴍᴏʀʏ Dɪɢᴜɴᴀᴋᴀɴ**\n"
-    memm += f"**Tᴏᴛᴀʟ     :** `{get_size(svmem.total)}`\n"
-    memm += f"**Aᴠᴀɪʟᴀʙʟᴇ :** `{get_size(svmem.available)}`\n"
-    memm += f"**Usᴇᴅ      :** `{get_size(svmem.used)}`\n"
-    memm += f"**Pᴇʀᴄᴇɴᴛᴀɢᴇ:** `{svmem.percent}%`\n"
+    memm = "**ᴍᴇᴍᴏʀʏ ᴅɪɢᴜɴᴀᴋᴀɴ**\n"
+    memm += f"**ᴛᴏᴛᴀʟ     :** `{get_size(svmem.total)}`\n"
+    memm += f"**ᴀᴠᴀɪʟᴀʙʟᴇ :** `{get_size(svmem.available)}`\n"
+    memm += f"**ᴜsᴇᴅ      :** `{get_size(svmem.used)}`\n"
+    memm += f"**ᴘᴇʀᴄᴇɴᴛᴀɢᴇ :** `{svmem.percent}%`\n"
     # Bandwidth Usage
-    bw = "**Bᴀɴᴅᴡɪᴛʜ Dɪɢᴜɴᴀᴋᴀɴ**\n"
-    bw += f"**Uɴɢɢᴀʜ  :** `{get_size(psutil.net_io_counters().bytes_sent)}`\n"
-    bw += f"**Dᴏᴡɴʟᴏᴀᴅ:** `{get_size(psutil.net_io_counters().bytes_recv)}`\n"
+    bw = "**ʙᴀɴᴅᴡɪᴛʜ ᴅɪɢᴜɴᴀᴋᴀɴ**\n"
+    bw += f"**ᴜɴɢɢᴀʜ  :** `{get_size(psutil.net_io_counters().bytes_sent)}`\n"
+    bw += f"**ᴅᴏᴡɴʟᴏᴀᴅ :** `{get_size(psutil.net_io_counters().bytes_recv)}`\n"
     help_string = f"{softw}\n"
     help_string += f"{cpuu}\n"
     help_string += f"{memm}\n"
     help_string += f"{bw}\n"
-    help_string += "**Iɴғᴏʀᴍᴀsɪ Mᴇsɪɴ**\n"
-    help_string += f"**Pʏᴛʜᴏɴ :** `{sys.version}`\n"
-    help_string += f"**Tᴇʟᴇᴛʜᴏɴ :**`{__version__}`\n"
-    help_string += f"**Pʏ-Aʏɪɪɴ :** `0.4.6`\n"
-    help_string += f"**Aʏɪɪɴ-Vᴇʀsɪᴏɴ :** `{var.BOT_VER} [{HOSTED_ON}]`"
+    help_string += "**ɪɴғᴏʀᴍᴀsɪ ᴍᴇsɪɴ**\n"
+    help_string += f"**ᴘʏᴛʜᴏɴ :** `{sys.version}`\n"
+    help_string += f"**ᴛᴇʟᴇᴛʜᴏɴ :**`{__version__}`\n"
+    help_string += f"**ᴘʏ-ᴇʙᴏᴡ :** `0.4.6`\n"
+    help_string += f"**ᴇʙᴏᴡ-ᴠᴇʀsɪᴏɴ :** `{var.BOT_VER} [{HOSTED_ON}]`"
     await edit_or_reply(event, help_string)
 
 
@@ -165,7 +165,7 @@ async def bot_ver(event):
 
         await edit_or_reply(
             event,
-            "✧ **Userbot Versi :** " f"`{verout}`" "\n✧ **Revisi :** " f"`{revout}`",
+            "• **Userbot Versi :** " f"`{verout}`" "\n• **Revisi :** " f"`{revout}`",
         )
     else:
         await edit_or_reply(
@@ -180,19 +180,17 @@ async def amireallyalive(alive):
     await alive.edit("😈")
     await asyncio.sleep(3)
     output = (
-        f"**Tʜᴇ [Aʏɪɪɴ-Usᴇʀʙᴏᴛ](https://github.com/AyiinXd/Ayiin-Userbot)**\n\n"
-        f"**{alive_text}**\n\n"
-        f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
-        f"{emoji} **Aʏɪɪɴ Vᴇʀsɪᴏɴ :** `{var.BOT_VER}`\n"
-        f"{emoji} **Bᴏᴛ Uᴘᴛɪᴍᴇ :** `{uptime}`\n"
-        f"{emoji} **Dᴇᴘʟᴏʏ Oɴ :** {HOSTED_ON}\n"
-        f"{emoji} **Mᴏᴅᴜʟᴇs :** `{len(modules)} Modules` \n"
-        f"{emoji} **Oᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id}) \n"
-        f"{emoji} **Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{python_version()}` \n"
-        f"{emoji} **PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ :** `Unlimited` \n"
-        f"{emoji} **Pʏ-Aʏɪɪɴ Vᴇʀsɪᴏɴ :** `0.4.6`\n"
-        f"{emoji} **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{version.__version__}` \n"
-        "╰✠╼━━━━━━━━━━━━━━━✠╯\n\n"
+        f"**ᴛʜᴇ [Eʙᴏᴡ-Usᴇʀʙᴏᴛ](https://github.com/c0dsx/Ebow-Userbot)**\n\n"
+        f"**ʜᴇʏ, sᴀʏᴀ ᴘᴇɴɢɢᴜɴᴀ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ**\n\n"
+        f"• **ᴇʙᴏᴡ ᴠᴇʀsɪᴏɴ :** `{var.BOT_VER}`\n"
+        f"• **ʙᴏᴛ ᴜᴘᴛɪᴍᴇ :** `{uptime}`\n"
+        f"• **ᴅᴇᴘʟᴏʏ ᴏɴ :** {HOSTED_ON}\n"
+        f"• **ᴍᴏᴅᴜʟᴇs :** `{len(modules)} Modules` \n"
+        f"• **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id}) \n"
+        f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{python_version()}` \n"
+        f"• **ᴘʏᴛɢᴄᴀʟʟs ᴠᴇʀsɪᴏɴ :** `Unlimited` \n"
+        f"• **ᴘʏ-ᴇʙᴏᴡ ᴠᴇʀsɪᴏɴ :** `0.4.6`\n"
+        f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{version.__version__}` \n\n"
     )
     if var.ALIVE_LOGO:
         try:
