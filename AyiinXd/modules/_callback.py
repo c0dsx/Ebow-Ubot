@@ -67,7 +67,7 @@ async def inline_handler(event):
     uid = user.id
     botusername = (await event.client.get_me()).username
     if event.query.user_id == uid and query.startswith(
-            "@AyiinChats"):
+            "@VirtualGanks"):
         buttons = paginate_help(0, dugmeler, "helpme")
         result = await event.builder.photo(
             file=logoyins,
@@ -133,7 +133,7 @@ async def inline_handler(event):
     else:
         result = builder.article(
             title="⚡ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ ",
-            description="Ayiin - Userbot | Telethon",
+            description="Ebow - Userbot | Telethon",
             url="https://t.me/VirtualGanks",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
