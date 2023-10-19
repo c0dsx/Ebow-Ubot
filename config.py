@@ -175,7 +175,7 @@ class Config(object):
 
     # Default .alive logo
     ALIVE_LOGO = (getenv("ALIVE_LOGO")
-                or "https://telegra.ph/file/b6b36504ef60ce9b10499.mp4")
+                or "https://telegra.ph/file/1f9f15b90255c4564683a.mp4")
 
     INLINE_PIC = (getenv("INLINE_PIC")
                 or "https://telegra.ph/file/2ed4614df857171aa3afb.jpg")
