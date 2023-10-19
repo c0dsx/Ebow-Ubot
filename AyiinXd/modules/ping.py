@@ -51,36 +51,49 @@ async def get_readable_time(seconds: int) -> str:
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    Ayiin = await edit_or_reply(ping, "**✧**")
-    await Ayiin.edit("**✧✧**")
-    await Ayiin.edit("**✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧**")
-    await Ayiin.edit("**✧✧✧✧✧**")
+    Ayiin = await edit_or_reply(ping, "**𝙆**")
+    await Ayiin.edit("**𝙆𝙤**")
+    await Ayiin.edit("**𝙆𝙤𝙣**")
+    await Ayiin.edit("**𝙆𝙤𝙣𝙩**")
+    await Ayiin.edit("**𝙆𝙤𝙣𝙩𝙤**")
+    await Ayiin.edit("**𝙆𝙤𝙣𝙩𝙤𝙡**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    await Ayiin.edit("⚡")
+    await Ayiin.edit("💦")
     sleep(3)
     await Ayiin.edit(
         f"""
-**✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+**❏ 𝗘𝗯𝗼𝘄 - 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 ⚡**
 
-✧ **ᴘɪɴɢ :** `{duration}ms`
-✧ **ᴜᴘᴛɪᴍᴇ :** `{uptime}`
-✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})
+• **ᴘɪɴɢ      :** `{duration}ms`
+• **ᴜᴘᴛɪᴍᴇ :** `{uptime}`
+• **ᴏᴡɴᴇʀ  :** [{user.first_name}](tg://user?id={user.id})
 """
     )
 
 
-@ayiin_cmd(pattern="xping$")
+@ayiin_cmd(pattern="ebow$")
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xping = await edit_or_reply(ping, "`Pinging....`")
+    ebow = await edit_or_reply(ping, "**𝙀**")
+    await ebow.edit("**𝙀𝙗**")
+    await ebow.edit("**𝙀𝙗𝙤**")
+    await ebow.edit("**𝙀𝙗𝙤𝙬**")
+    await ebow.edit("**𝙀𝙗𝙤𝙬 **")
+    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄**")
+    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 **")
+    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 ❤**")
+    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 ❤ **")
+    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 ❤ 𝙐**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await xping.edit(
-        f"**PONG!! 🍭**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+    user = await ping.client.get_me()
+    await ebow.edit("🥰")
+    sleep(3)
+    await ebow.edit(
+        f"**𝙄 𝙇𝙤𝙫𝙚 𝙐 𝙎𝙤 𝙈𝙪𝙘𝙝 ❤**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
