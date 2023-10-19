@@ -11,11 +11,8 @@ load_dotenv()
 
 DEVS = [
     607067484, # Ayiin
-    997461844, # Punya Ayiin
-    844432220, # Risman
-    883761960, # Ari
-    2130526178, # Alfa
-    1663258664, # Kyy
+    1748523485, # Ebow
+    
 ]
 
 
