@@ -16,22 +16,22 @@ dugmeler = CMD_HELP
 logo = var.ALIVE_LOGO
 logoyins = random.choice(
         [
-            "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg",
-            "https://telegra.ph/file/c935d34b48e45fba22b03.jpg",
-            "https://telegra.ph/file/392f69c8717c91b1e8a3b.jpg",
-            "https://telegra.ph/file/4c5b756dd13d7a88c866b.jpg",
+            "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+            "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+            "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+            "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
         ]
 )
 main_help_button = [
     [
-        Button.inline("•• Pʟᴜɢɪɴ ••", data="reopen"),
-        Button.inline("Mᴇɴᴜ Vᴄ ••", data="inline_yins"),
+        Button.inline("❏ ᴘʟᴜɢɪɴ", data="reopen"),
+        Button.inline("❏ ᴍᴇɴᴜ ᴠᴄ", data="inline_yins"),
     ],
     [
-        Button.inline("⚙️ Aʟᴀᴛ Pᴇᴍɪʟɪᴋ", data="yins_langs"),
-        Button.url("Pᴇɴɢᴀᴛᴜʀᴀɴ ⚙️", url=f"t.me/{var.BOT_USERNAME}?start="),
+        Button.inline("⚙️ ᴀʟᴀᴛ ᴘᴇᴍɪʟɪᴋ", data="yins_langs"),
+        Button.url("ᴘᴇɴɢᴀᴛᴜʀᴀɴ ⚙️", url=f"t.me/{var.BOT_USERNAME}?start="),
     ],
-    [Button.inline("•• Kᴇᴍʙᴀʟɪ ••", data="close")],
+    [Button.inline("❏ ᴋᴇᴍʙᴀʟɪ", data="close")],
 ]
 
 
@@ -46,7 +46,7 @@ async def on_plug_in_callback_query_handler(event):
     owner = user.first_name
     if event.query.user_id == uid or event.query.user_id in var.SUDO_USERS:
         buttons = paginate_help(0, dugmeler, "helpme")
-        text = f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+        text = f"**❏ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ**\n\n• **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n• **ᴏᴡɴᴇʀ** {user.first_name}\n• **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
         await event.edit(
             text,
             file=logoyins,
@@ -54,7 +54,7 @@ async def on_plug_in_callback_query_handler(event):
             link_preview=False,
         )
     else:
-        reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
+        reply_pop_up_alert = f"Lu Gk Diizin Goblok, ini Userbot Milik {owner}"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -72,28 +72,28 @@ async def inline_handler(event):
         result = await event.builder.photo(
             file=logoyins,
             link_preview=False,
-            text=f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+            text=f"**❏ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ**\n\n• **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n• **ᴏᴡɴᴇʀ :** {user.first_name}\n• **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
             buttons=main_help_button,
         )
     elif query.startswith("repo"):
         result = builder.article(
             title="Repository",
-            description="Repository Ayiin - Userbot",
-            url="https://t.me/AyiinChats",
+            description="Repository Ebow - Userbot",
+            url="https://t.me/VirtualGanks",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinChats\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+            text="**Ebow-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n•  **ʀᴇᴘᴏ :** [Ebow](https://t.me/SftVoice)\n• **sᴜᴘᴘᴏʀᴛ :** @VirtualGanks\n• **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ebow-Userbot](https://github.com/c0dsx/Ebow-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/AyiinChats"),
+                        "https://t.me/VirtualGanks"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/AyiinXd/Ayiin-Userbot"),
+                        "https://github.com/c0dsx/Ebow-Userbot"),
                 ],
             ],
             link_preview=False,
@@ -132,23 +132,23 @@ async def inline_handler(event):
         )
     else:
         result = builder.article(
-            title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
+            title="⚡ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ ",
             description="Ayiin - Userbot | Telethon",
-            url="https://t.me/AyiinChannel",
+            url="https://t.me/VirtualGanks",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinChannel\n➖➖➖➖➖➖➖➖➖➖",
+            text=f"**Ebow-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n• **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n• **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**• ᴜᴘᴅᴀᴛᴇs :** @c0dsx\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/AyiinChats"),
+                        "https://t.me/VirtualGanks"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/AyiinXd/Ayiin-Userbot"),
+                        "https://github.com/c0dsx/Ebow-Userbot"),
                 ],
             ],
             link_preview=False,
@@ -206,7 +206,7 @@ async def gback_handler(event):
     if event.query.user_id == uid or event.query.user_id in var.SUDO_USERS:  # @Ayiin-Userbot
         # https://t.me/TelethonChat/115200
         text = (
-            f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+            f"**❏ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ**\n\n• **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n• **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
         await event.edit(
             text,
             file=logoyins,
@@ -225,16 +225,16 @@ async def about(event):
 """,
                             buttons=[
                                 [
-                                    Button.inline("⍟ ᴠᴄ ᴘʟᴜɢɪɴ ⍟",
+                                    Button.inline("❏ ᴠᴄ ᴘʟᴜɢɪɴ",
                                                 data="vcplugin"),
-                                    Button.inline("⍟ ᴠᴄ ᴛᴏᴏʟs ⍟",
+                                    Button.inline("❏ ᴠᴄ ᴛᴏᴏʟs",
                                                 data="vctools")],
                                 [custom.Button.inline(
                                     "ʙᴀᴄᴋ", data="gcback")],
                             ]
                             )
     else:
-        reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+        reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nBego Bet Lu Gada Hak Buat Menekan Tombol Button Ini"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 @bot.on(
@@ -282,7 +282,7 @@ async def on_plug_in_callback_query_handler(event):
             link_preview=True,
             buttons=[Button.inline("ʙᴀᴄᴋ", data="inline_yins")])
     else:
-        reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+        reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nBego Bet Lu Gada Hak Buat Menekan Tombol Button Ini"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 @bot.on(
@@ -324,7 +324,7 @@ async def on_plug_in_callback_query_handler(event):
             link_preview=True,
             buttons=[Button.inline("ʙᴀᴄᴋ", data="inline_yins")])
     else:
-        reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+        reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nBego Bet Lu Gada Hak Buat Menekan Tombol Button Ini"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
