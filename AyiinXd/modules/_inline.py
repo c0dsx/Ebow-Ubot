@@ -24,10 +24,10 @@ main_help_button = [
 ]
 logoyins = random.choice(
     [
-        "https://telegra.ph/file/1f9f15b90255c4564683a.mp4",
-        "https://telegra.ph/file/1f9f15b90255c4564683a.mp4",
-        "https://telegra.ph/file/1f9f15b90255c4564683a.mp4",
-        "https://telegra.ph/file/1f9f15b90255c4564683a.mp4",
+        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
     ]
 )
 
