@@ -6,7 +6,7 @@
 FROM ayiinxd/ayiin:xd
 
 RUN git clone -b Ebow-Userbot https://github.com/c0dsx/Ebow-Userbot /home/ebowuserbot/ \
-    && chmod 777 /home/ebownuserbot \
+    && chmod 777 /home/ebowuserbot \
     && mkdir /home/ebowuserbot/bin/
 
 #COPY ./sample.env ./.env* /home/ebowuserbot/
