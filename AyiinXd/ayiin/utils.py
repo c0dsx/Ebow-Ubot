@@ -42,7 +42,7 @@ new_rights = ChatAdminRights(
 
 
 async def autopilot():
-    LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
+    LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT BUAT LU")
     try:
         r = await Ayiin(
             CreateChannelRequest(
@@ -90,7 +90,7 @@ async def autobot():
             var.BOTLOG_CHATID,
             "**MOHON TUNGGU SEBENTAR, SEDANG MEMBUAT ASSISTANT BOT ANDA DI @BotFather**"
         )
-        LOGS.info("MOHON TUNGGU SEBENTAR, SEDANG MEMBUAT ASSISTANT BOT ANDA.")
+        LOGS.info("TUNGGU SEBENTAR YA PUKI, LAGI BUAT ASSISTANT BOT LU NIH.")
         who = await Ayiin.get_me()
         name = f"{who.first_name} Assistant Bot"
         if who.username:
@@ -158,21 +158,21 @@ async def autobot():
                 await asyncio.sleep(1)
                 await Ayiin.send_message(bf, f"@{username}")
                 await asyncio.sleep(1)
-                await Ayiin.send_message(bf, f"Managed With ✨ By {who.first_name}")
+                await Ayiin.send_message(bf, f"Managed With By {who.first_name}")
                 await asyncio.sleep(3)
                 await Ayiin.send_message(bf, "/setdescription")
                 await asyncio.sleep(1)
                 await Ayiin.send_message(bf, f"@{username}")
                 await asyncio.sleep(1)
                 await Ayiin.send_message(
-                    bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @c0dsx ✨"
+                    bf, f"• Owner ~ {who.first_name}\n\n• Powered By ~ @c0dsx"
                 )
                 await Ayiin.send_message(
                     var.BOTLOG_CHATID,
                     f"**BERHASIL MEMBUAT ASSISTANT BOT ANDA DENGAN USERNAME @{username}**",
                 )
                 LOGS.info(
-                    f"BERHASIL MEMBUAT ASSISTANT BOT ANDA DENGAN USERNAME @{username}")
+                    f"BISA SABAR KAN?, NOH ASSISTANT BOT LU UDAH JADI USERNAME NYA @{username}")
                 try:
                     await Ayiin(InviteToChannelRequest(int(var.BOTLOG_CHATID), [username]))
                     await asyncio.sleep(3)
@@ -185,7 +185,7 @@ async def autobot():
                     pass
                 await Ayiin.send_message(
                     var.BOTLOG_CHATID,
-                    "**SEDANG MERESTART USERBOT HARAP TUNGGU.**",
+                    "**GA SABARAN BANGET AJG! GUA RESTART DULU USERBOT LU.**",
                 )
                 await set_var_value("BOT_TOKEN", token)
                 await set_var_value("BOT_USERNAME", f"{username}")
@@ -213,21 +213,21 @@ async def autobot():
             await asyncio.sleep(1)
             await Ayiin.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await Ayiin.send_message(bf, f"Managed With ✨ By {who.first_name}")
+            await Ayiin.send_message(bf, f"Managed With By {who.first_name}")
             await asyncio.sleep(3)
             await Ayiin.send_message(bf, "/setdescription")
             await asyncio.sleep(1)
             await Ayiin.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await Ayiin.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @c0dsx ✨"
+                bf, f"• Owner ~ {who.first_name}\n\n• Powered By ~ @c0dsx"
             )
             await Ayiin.send_message(
                 var.BOTLOG_CHATID,
                 f"**BERHASIL MEMBUAT ASSISTANT BOT ANDA DENGAN USERNAME @{username}**",
             )
             LOGS.info(
-                f"BERHASIL MEMBUAT ASSISTANT BOT DENGAN USERNAME @{username}"
+                f"BISA SABAR KAN?, NOH ASSISTANT BOT LU UDAH JADI USERNAME NYA @{username}"
             )
             try:
                 await Ayiin(InviteToChannelRequest(int(var.BOTLOG_CHATID), [username]))
@@ -241,7 +241,7 @@ async def autobot():
                 pass
             await Ayiin.send_message(
                 var.BOTLOG_CHATID,
-                "**SEDANG MERESTART USERBOT HARAP TUNGGU.**",
+                "**GA SABARAN BANGET AJG! GUA RESTART DULU USERBOT LU.**",
             )
             await set_var_value("BOT_TOKEN", token)
             await set_var_value("BOT_USERNAME", f"{username}")
