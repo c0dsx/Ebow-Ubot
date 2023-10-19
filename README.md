@@ -1,21 +1,14 @@
- <h1 align="center">✨ 𝘼𝙮𝙞𝙞𝙣 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 ✨</h1>
-
-<a href="https://github.com/AyiinXd/Ayiin-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/AyiinXd/Ayiin-Userbot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/AyiinXd/Ayiin-Userbot)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/AyiinXd/Ayiin-Userbot/graphs/commit-activity)
-[![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/AyiinXd/Ayiin-Userbot/dashboard)
-[![GitHub Forks](https://img.shields.io/github/forks/AyiinXd/Ayiin-Userbot?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/fork)
-[![GitHub Stars](https://img.shields.io/github/stars/AyiinXd/Ayiin-Userbot?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/stargazers)
+ <h1 align="center">✨ 𝙀𝙗𝙤𝙬 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 ✨</h1>
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/940f21be8d8863b6c70ae.jpg">
+  <img src="https://telegra.ph/file/2ed4614df857171aa3afb.jpg">
 </p>
 
-👩‍💻 Ayiin-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+🔰 Ebow-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
-Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
+Saya merombak Repository ini hanya ingin melampiaskan Kegabutan saya karena Saya adalah Seorang Pengangguran Yang haus Kasih Sayang. Angjay Curhat ni Ceritanya.
 
 ## Disclaimer
 
@@ -47,9 +40,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 ### Tutorial Deploy di VPS
 
 
- • `git clone https://github.com/AyiinXd/Ayiin-Userbot`
+ • `git clone https://github.com/c0dsx/Ebow-Userbot`
 
- • `cd Ayiin-Userbot`
+ • `cd Ebow-Userbot`
 
  • `pip3 install -U -r requirements.txt`
 
@@ -61,7 +54,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
   - ketik ctrl + S
   - ctrl + X
 
- • `screen -S Ayiin-Userbot`
+ • `screen -S Ebow-Userbot`
 
  • `bash start`
 
@@ -75,17 +68,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 </details>
 
-<details>
-<summary><b>🔗 Deploy To Bot Heroku</b></summary>
-<br>
-
-<p><a href="https://telegram.dog/XTZ_HerokuBot?start=QXlpaW5YZC9BeWlpbi1Vc2VyYm90IEF5aWluLVVzZXJib3Q"><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
-
-</details>
-
 ## Updates & Support
 
-Follow Channel [@AyiinChannel](https://t.me/AyiinChannel) untuk info Update bot dan Gabung Group [@AyiinChats](https://t.me/AyiinChats) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Ayiin-Userbot.
+Follow Channel [@EbowChannel](https://t.me/c0dsx) untuk Melihat Kegabutan Saya dan Gabung Group [@VirtualGanks](https://t.me/VirtualGenks) untuk Melihat Kegabutan Warga Telegram Yang Sangat Unfaedah
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/Man-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [AdekMaulana](https://github.com/adekmaulana) : ProjectBish
@@ -104,8 +89,4 @@ Follow Channel [@AyiinChannel](https://t.me/AyiinChannel) untuk info Update bot 
 -  [Lonami](https://github.com/LonamiWebs/) for [Telethon](https://github.com/LonamiWebs/Telethon)
 -  [Risman](https://github.com/mrismanaziz) for [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)
 -  [AyiinXd](https://github.com/AyiinXd) for [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)
-
-## License
-Licensed under [Raphielscape Public License](https://github.com/AyiinXd/Ayiin-Userbot/blob/Ayiin-Userbot/LICENSE) - Version 1.d, February 2020
-
 
