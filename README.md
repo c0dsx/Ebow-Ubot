@@ -1,4 +1,4 @@
- <h1 align="center">✨ 𝙀𝙗𝙤𝙬 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 ✨</h1>
+ <h1 align="center">⚡ 𝙀𝙗𝙤𝙬 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 </h1>
 
 
 <p align="center">
