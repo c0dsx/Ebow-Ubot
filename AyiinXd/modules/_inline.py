@@ -13,21 +13,21 @@ from AyiinXd.ayiin import HOSTED_ON
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 main_help_button = [
     [
-        Button.inline("❏ ᴘʟᴜɢɪɴ", data="reopen"),
-        Button.inline("❐ ᴍᴇɴᴜ ᴠᴄ", data="inline_yins"),
+        Button.inline("•• Pʟᴜɢɪɴ ••", data="reopen"),
+        Button.inline("Mᴇɴᴜ Vᴄ ••", data="inline_yins"),
     ],
     [
-        Button.inline("⚙️ ᴀʟᴀᴛ ᴘᴇᴍɪʟɪᴋ", data="yins_langs"),
-        Button.url("ᴘᴇɴɢᴀᴛᴜʀᴀɴ ⚙️", url=f"t.me/{var.BOT_USERNAME}?start="),
+        Button.inline("⚙️ Aʟᴀᴛ Pᴇᴍɪʟɪᴋ", data="yins_langs"),
+        Button.url("Pᴇɴɢᴀᴛᴜʀᴀɴ ⚙️", url=f"t.me/{var.BOT_USERNAME}?start="),
     ],
-    [Button.inline("❐ ᴋᴇᴍʙᴀʟɪ", data="close")],
+    [Button.inline("•• Kᴇᴍʙᴀʟɪ ••", data="close")],
 ]
 logoyins = random.choice(
     [
-        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
-        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
-        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
-        "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+        "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg",
+        "https://telegra.ph/file/c935d34b48e45fba22b03.jpg",
+        "https://telegra.ph/file/392f69c8717c91b1e8a3b.jpg",
+        "https://telegra.ph/file/4c5b756dd13d7a88c866b.jpg",
     ]
 )
 
@@ -46,28 +46,28 @@ async def inline_handler(event):
         result = await event.builder.photo(
             file=logoyins,
             link_preview=False,
-            text=f"**❏ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ**\n\n• **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n• **ᴏᴡɴᴇʀ :** {user.first_name}\n• **ᴊᴜᴍʟᴀʜ :** {len(CMD_HELP)} **Modules**",
+            text=f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(CMD_HELP)} **Modules**",
             buttons=main_help_button,
         )
     elif query.startswith("repo"):
         result = builder.article(
             title="Repository",
-            description="Repository Ebow - Userbot",
-            url="https://t.me/VirtualGanks",
+            description="Repository Ayiin - Userbot",
+            url="https://t.me/AyiinChats",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text="**Ebow-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n•  **ʀᴇᴘᴏ :** [Ebow](https://t.me/sftvoice)\n• **sᴜᴘᴘᴏʀᴛ :** @VirtualGanks\n• **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ebow-Userbot](https://github.com/c0dsx/Ebow-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+            text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinChats\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/VirtualGanks"),
+                        "https://t.me/AyiinChats"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/c0dsx/Ebow-Userbot"),
+                        "https://github.com/AyiinXd/Ayiin-Userbot"),
                 ],
             ],
             link_preview=False,
@@ -106,23 +106,23 @@ async def inline_handler(event):
         )
     else:
         result = builder.article(
-            title="⚡ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ",
-            description="Ebow - Userbot | Telethon",
-            url="https://t.me/c0dsx",
+            title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
+            description="Ayiin - Userbot | Telethon",
+            url="https://t.me/AyiinChannel",
             thumb=InputWebDocument(
                 var.INLINE_PIC,
                 0,
                 "image/jpeg",
                 []),
-            text=f"**Ebow-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n• **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n• **ᴀssɪsᴛᴀɴᴛ:** {var.BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @c0dsx\n➖➖➖➖➖➖➖➖➖➖",
+            text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {var.BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinChannel\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/VirtualGanks"),
+                        "https://t.me/AyiinChats"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/c0dsx/Ebow-Userbot"),
+                        "https://github.com/AyiinXd/Ayiin-Userbot"),
                 ],
             ],
             link_preview=False,
