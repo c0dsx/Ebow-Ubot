@@ -149,13 +149,13 @@ class Config(object):
     ALIVE_NAME = getenv("ALIVE_NAME", "Ebow")
 
     # Custom Emoji Alive
-    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "")
+    ALIVE_EMOJI = getenv("ALIVE_EMOJI", "•")
 
     # Custom Emoji Alive
-    INLINE_EMOJI = getenv("INLINE_EMOJI", "")
+    INLINE_EMOJI = getenv("INLINE_EMOJI", "•")
 
     # Custom icon HELP
-    ICON_HELP = getenv("ICON_HELP", "")
+    ICON_HELP = getenv("ICON_HELP", "•")
 
     # Time & Date - Country and Time Zone
     COUNTRY = str(getenv("COUNTRY", "ID"))
@@ -175,10 +175,10 @@ class Config(object):
 
     # Default .alive logo
     ALIVE_LOGO = (getenv("ALIVE_LOGO")
-                or "https://telegra.ph/file/1f9f15b90255c4564683a.mp4")
+                or "https://telegra.ph/file/5510638c0d486063c3660.mp4")
 
     INLINE_PIC = (getenv("INLINE_PIC")
-                or "https://telegra.ph/file/2ed4614df857171aa3afb.jpg")
+                or "https://telegra.ph/file/5510638c0d486063c3660.mp4")
 
     # Picture For VCPLUGIN
     PLAY_PIC = (getenv("PLAY_PIC")
