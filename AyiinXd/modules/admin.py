@@ -146,12 +146,12 @@ async def promote(event):
         rank = "admin"
     if not user:
         return
-    await eor(event, "`Mempromosikan...`")
+    await eor(event, "`Awas Aja Cuman Numpang Tittle Doang...`")
     try:
         await event.client(EditAdminRequest(event.chat_id, user.id, new_rights, rank))
     except BadRequestError:
         return await eod(event, "**Tidak Mempunyai Izin!**")
-    await eor(event, "`Berhasil Dipromosikan!`", time=30)
+    await eor(event, "`Noh Udah Admin! Bilang Apa Manies?`", time=30)
 
 
 @ayiin_cmd(pattern="demote(?:\\s|$)([\\s\\S]*)", group_only=True)
@@ -161,7 +161,7 @@ async def demote(event):
     user, _ = await get_user_from_event(event)
     if not user:
         return
-    await eor(event, "`Menurunkan...`")
+    await eor(event, "`Ga Guna Banget Cuman Numpang Tittle...`")
     newrights = ChatAdminRights(
         add_admins=None,
         invite_users=None,
@@ -192,7 +192,7 @@ async def ban(bon):
     user, reason = await get_user_from_event(bon)
     if not user:
         return
-    ayiin = await eor(bon, "`Pemrosesan Larangan...`")
+    ayiin = await eor(bon, "`Sabar Anjeng Bocahnya Lagi Gua Ban...`")
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
     except BadRequestError:
@@ -200,26 +200,26 @@ async def ban(bon):
     if reason:
         await ayiin.edit(
             f"""
-\\**#𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧**//
+❏ **𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧**
 
-**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})
-**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{str(user.id)}`
-**𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝘽𝙖𝙣𝙣𝙚𝙙 𝙐𝙨𝙚𝙧`
-**𝙍𝙚𝙖𝙨𝙤𝙣 :** `{reason}`
-**𝘽𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{me.first_name}`
-**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+• **𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})
+• **𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{str(user.id)}`
+• **𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝘽𝙖𝙣𝙣𝙚𝙙 𝙐𝙨𝙚𝙧`
+• **𝙍𝙚𝙖𝙨𝙤𝙣 :** `{reason}`
+• **𝘽𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{me.first_name}`
+• **𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : 𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙧**
 """
         )
     else:
         await ayiin.edit(
             f"""
-\\**#𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧**//
+❏ **#𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧**//
 
-**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})
-**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{str(user.id)}`
-**𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝘽𝙖𝙣𝙣𝙚𝙙 𝙐𝙨𝙚𝙧`
-**𝘽𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{me.first_name}`
-**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**
+• **𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})
+• **𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{str(user.id)}`
+• **𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝘽𝙖𝙣𝙣𝙚𝙙 𝙐𝙨𝙚𝙧`
+• **𝘽𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{me.first_name}`
+• **𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : 𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙩**
 """
         )
 
