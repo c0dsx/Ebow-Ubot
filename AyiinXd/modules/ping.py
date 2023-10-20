@@ -83,25 +83,20 @@ async def _(ping):
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ebow = await edit_or_reply(ping, "**𝙀**")
-    await ebow.edit("**𝙀𝙗**")
-    await ebow.edit("**𝙀𝙗𝙤**")
-    await ebow.edit("**𝙀𝙗𝙤𝙬**")
-    await ebow.edit("**𝙀𝙗𝙤𝙬 **")
-    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄**")
-    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 **")
-    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 ❤**")
-    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 ❤ **")
-    await ebow.edit("**𝙀𝙗𝙤𝙬 𝙄 ❤ 𝙐**")
+    Ebow = await edit_or_reply(ping, "`𝙀𝘽𝙊𝙒𝙒𝙒...`")
+    sleep(2)
+    await ebow.edit("**𝘼𝙆𝙐 𝙈𝘼𝙐 𝙉𝙂𝙊𝙈𝙊𝙉𝙂 𝙎𝙀𝙎𝙐𝘼𝙏𝙐 𝙃𝙀𝙃𝙀...**")
+    sleep(1)
+    await ebow.edit("**𝙏𝘼𝙋𝙄 𝘼𝙆𝙐 𝙈𝘼𝙇𝙐 😖**")
+    sleel(3)
+    await ebow.edit("**𝙄 𝙇𝙊𝙑𝙀 𝙔𝙊𝙐 𝙀𝘽𝙊𝙒 𝙂𝘼𝙉𝙏𝙀𝙉𝙂 ❤**")
+    Sleep(1)
+    await ebow.edit("**𝙍𝙐𝙉𝙉...**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    user = await ping.client.get_me()
-    await ebow.edit("🥰")
-    sleep(3)
-    await ebow.edit(
-        f"**𝙄 𝙇𝙤𝙫𝙚 𝙐 𝙎𝙤 𝙈𝙪𝙘𝙝 ❤**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+    await xping.edit(
+        f"**𝙅𝘼𝘿𝙄 𝙈𝘼𝙇𝙐 𝙃𝙀𝙃𝙀𝙃𝙀 🙈...**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
-
 
 @ayiin_cmd(pattern="lping$")
 async def _(ping):
