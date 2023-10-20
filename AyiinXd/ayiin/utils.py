@@ -47,7 +47,7 @@ async def autopilot():
         r = await Ayiin(
             CreateChannelRequest(
                 title="𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙇𝙤𝙜𝙨",
-                about="» Group log Created by: Ayiin-Userbot\n\n» Support : @AyiinChats\n» Support: @AyiinChannel",
+                about="» Group log Created by: Ebow-Userbot\n\n» Support: @Ac0dsx",
                 megagroup=True,
             ),
         )
@@ -65,7 +65,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/2ed4614df857171aa3afb.jpg", "photoyins.jpg"
+            "https://telegra.ph/file/878b1b571c31c35389541.jpg", "photoyins.jpg"
         )
         ll = await Ayiin.upload_file(photo)
         try:
@@ -92,7 +92,7 @@ async def autobot():
         )
         LOGS.info("TUNGGU SEBENTAR YA PUKI, LAGI BUAT ASSISTANT BOT LU NIH.")
         who = await Ayiin.get_me()
-        name = f"{who.first_name} Assistant Bot"
+        name = f"{who.first_name} ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ"
         if who.username:
             username = f"{who.username}_bot"
         else:
@@ -125,7 +125,7 @@ async def autobot():
                 sys.exit(1)
         filogo = random.choice(
             [
-                "https://telegra.ph/file/2ed4614df857171aa3afb.jpg",
+                "https://telegra.ph/file/fcd8b70b0483c8646ea0c.jpg",
                 "AyiinXd/resources/logo.jpg",
             ]
         )
