@@ -35,8 +35,8 @@ async def gcast(event):
         reply = await event.get_reply_message()
         msg = reply.text
     else:
-        return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+        return await eod(event, "**Mana kirim Sini Biar Gua Viralin**")
+    kk = await eor(event, "`❏ Sabar Lagi Gua Viralin Nih...\n❏ Kalo Limit Berarti Amal Ibadah Lu Kurang...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -54,7 +54,7 @@ async def gcast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** {done} **Grup Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {er} **Grup.**"
+        f"**❏ Noh Udah Gua Viralin Ke** {done} **Grup.**\n**Sorry Gagal Gua Viralin Ke** {er} **Grup Ntar Jariyah.**"
     )
 
 
@@ -66,8 +66,8 @@ async def gucast(event):
         reply = await event.get_reply_message()
         msg = reply.text
     else:
-        return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+        return await eod(event, "**Mana Kirim Sini Biar Gua Viralin**")
+    kk = await eor(event, "`❏ Sabar Lagi Gua Viralin Nih...\n❏ Kalo Limit Berarti Amal Ibadah Lu Kurang...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -85,7 +85,7 @@ async def gucast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** {done} **Chat Tod.**\n**Sorry Tod Gagal Mengirim Pesan Ke** {er} **Chat.**"
+        f"**Noh Udah Gua Viralin Ke** {done} **Orang.**\n**Tapi Sory Ga Terkirim Ke** {er} **Orang. Susah Banget Dihubungin**"
     )
 
 
