@@ -45,9 +45,9 @@ async def gban(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
     if sender.id != me.id:
-        gbun = await event.reply("`Pemrosesan larangan global...`")
+        gbun = await event.reply("`Sabar Anjeng Lagi Gua Proses Gban!...`")
     else:
-        gbun = await edit_or_reply(event, "`Pemrosesan larangan global...`")
+        gbun = await edit_or_reply(event, "`Sabar Anjeng Lagi Gua Proses Gban!...`")
     start = datetime.now()
     user, reason = await get_user_from_event(event, gbun)
     if not user:
@@ -56,7 +56,7 @@ async def gban(event):
         await gbun.edit("**𝙉𝙜𝙖𝙥𝙖𝙞𝙣 𝙉𝙜𝙚𝙂𝙗𝙖𝙣 𝘿𝙞𝙧𝙞 𝙎𝙚𝙣𝙙𝙞𝙧𝙞 𝙂𝙤𝙗𝙡𝙤𝙠 🐽**")
         return
     if user.id in DEVS:
-        await gbun.edit("**Apakah Anda Gila ?.. Dia Adalah Developer Ayiin-Userbot 🤪**")
+        await gbun.edit("**Apakah Anda Gila ?.. Dia Adalah Developer Ebow-Userbot 🤪**")
         return
     if cek_gbanned(user.id):
         await gbun.edit(
@@ -88,11 +88,11 @@ async def gban(event):
     timetaken = (end - start).seconds
     if reason:
         await gbun.edit(
-            f"**\\#𝙂𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧//**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{user.id}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 : 𝙂𝘽𝙖𝙣𝙣𝙚𝙙 𝙄𝙣 {count} 𝙂𝙧𝙤𝙪𝙥𝙨**\n**𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 𝙂𝙗𝙖𝙣𝙣𝙚𝙙 :** `{timetaken}` **𝙎𝙚𝙘𝙤𝙣𝙙𝙨**!!\n**𝙍𝙚𝙖𝙨𝙤𝙣 :** `{reason}`\n**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**"
+            f"**❏ 𝙂𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{user.id}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 : 𝙂𝘽𝙖𝙣𝙣𝙚𝙙 𝙄𝙣 {count} 𝙂𝙧𝙤𝙪𝙥𝙨**\n**𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 𝙂𝙗𝙖𝙣𝙣𝙚𝙙 :** `{timetaken}` **𝙎𝙚𝙘𝙤𝙣𝙙𝙨**!!\n**𝙍𝙚𝙖𝙨𝙤𝙣 :** `{reason}`\n**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : 𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙩**"
         )
     else:
         await gbun.edit(
-            f"**\\#𝙂𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧//**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{user.id}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 : 𝙂𝘽𝙖𝙣𝙣𝙚𝙙 𝙄𝙣 {count} 𝙂𝙧𝙤𝙪𝙥𝙨**\n**𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 𝙂𝙗𝙖𝙣𝙣𝙚𝙙 :** `{timetaken}` **𝙎𝙚𝙘𝙤𝙣𝙙𝙨**!!\n**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✧**"
+            f"**❏ 𝙂𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{user.first_name}](tg://user?id={user.id})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{user.id}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 : 𝙂𝘽𝙖𝙣𝙣𝙚𝙙 𝙄𝙣 {count} 𝙂𝙧𝙤𝙪𝙥𝙨**\n**𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 𝙂𝙗𝙖𝙣𝙣𝙚𝙙 :** `{timetaken}` **𝙎𝙚𝙘𝙤𝙣𝙙𝙨**!!\n**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : 𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙩**"
         )
 
 
