@@ -47,7 +47,7 @@ async def autopilot():
         r = await Ayiin(
             CreateChannelRequest(
                 title="𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙇𝙤𝙜𝙨",
-                about="» Group log Created by: Ebow-Userbot\n\n» Support: @Ac0dsx",
+                about="» Group log Created by: 𝙀𝙗𝙤𝙬-𝙐𝙨𝙚𝙧𝙗𝙤𝙩\n\n» Support: @c0dsx",
                 megagroup=True,
             ),
         )
