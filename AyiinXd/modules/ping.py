@@ -80,18 +80,18 @@ async def _(ping):
 
 
 @ayiin_cmd(pattern="ebow$")
-async def _(ping):
+async def _(xping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    Ebow = await edit_or_reply(ping, "`𝙀𝘽𝙊𝙒𝙒𝙒...`")
+    xping = await edit_or_reply(ping, "`𝙀𝘽𝙊𝙒𝙒𝙒...`")
     sleep(2)
-    await ebow.edit("**𝘼𝙆𝙐 𝙈𝘼𝙐 𝙉𝙂𝙊𝙈𝙊𝙉𝙂 𝙎𝙀𝙎𝙐𝘼𝙏𝙐 𝙃𝙀𝙃𝙀...**")
+    await xping.edit("**𝘼𝙆𝙐 𝙈𝘼𝙐 𝙉𝙂𝙊𝙈𝙊𝙉𝙂 𝙎𝙀𝙎𝙐𝘼𝙏𝙐 𝙃𝙀𝙃𝙀...**")
     sleep(1)
-    await ebow.edit("**𝙏𝘼𝙋𝙄 𝘼𝙆𝙐 𝙈𝘼𝙇𝙐 😖**")
+    await xping.edit("**𝙏𝘼𝙋𝙄 𝘼𝙆𝙐 𝙈𝘼𝙇𝙐 😖**")
     sleel(3)
-    await ebow.edit("**𝙄 𝙇𝙊𝙑𝙀 𝙔𝙊𝙐 𝙀𝘽𝙊𝙒 𝙂𝘼𝙉𝙏𝙀𝙉𝙂 ❤**")
+    await xping.edit("**𝙄 𝙇𝙊𝙑𝙀 𝙔𝙊𝙐 𝙀𝘽𝙊𝙒 𝙂𝘼𝙉𝙏𝙀𝙉𝙂 ❤**")
     Sleep(1)
-    await ebow.edit("**𝙍𝙐𝙉𝙉...**")
+    await xping.edit("**𝙍𝙐𝙉𝙉...**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
