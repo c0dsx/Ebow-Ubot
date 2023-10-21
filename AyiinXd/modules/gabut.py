@@ -31,6 +31,19 @@ async def _(uno):
     await xd.edit("`𝘽𝙚𝙬𝙖𝙣 𝙐𝙣𝙤 𝙮𝙪𝙠 🙈`")
     sleep(1)
     await xd.edit("`𝙔𝙖𝙣𝙜 𝙆𝙖𝙡𝙖𝙝 𝙋𝙞𝙣𝙙𝙖𝙝 𝘼𝙜𝙖𝙢𝙖 🙊`")
+    
+
+@ayiin_cmd(pattern="ebow(?: |$)(.*)")
+async def _(ebow):
+    ebow = await edit_or_replay(ebow, "`𝙀𝙗𝙤𝙬 𝙎𝙖𝙮𝙖𝙣𝙜𝙜𝙜...`")
+    sleep(2)
+    await ebow.edit("`𝙆𝙤𝙠 𝙆𝙖𝙢𝙪 𝙂𝙖𝙣𝙩𝙚𝙣𝙜 𝘽𝙖𝙣𝙜𝙚𝙩 𝙎𝙞𝙝 𝙝𝙚𝙝𝙚 🥰`")
+    sleep(2)
+    await ebow.edit("`𝘽𝙪𝙖𝙩 𝙆𝙖𝙢𝙪 𝙎𝙚𝙢𝙖𝙣𝙜𝙖𝙩 𝙅𝙖𝙡𝙖𝙣𝙞𝙣 𝙃𝙖𝙧𝙞𝙣𝙮𝙖 😘`")
+    sleep(1)
+    await ebow.edit("`𝙇𝙤𝙫𝙚 𝙔𝙤𝙪 𝙎𝙖𝙮𝙖𝙣𝙜𝙜 𝙆𝙪𝙪𝙪𝙪𝙪 ❤`")
+
+
 
 
 CMD_HELP.update(
@@ -42,6 +55,8 @@ CMD_HELP.update(
         \n  »  **Kegunaan : **Coba Sendiri Tod.\
         \n\n  »  **Perintah :** `{cmd}uno`\
         \n  »  **Kegunaan : **Coba Sendiri Tod.\
+        \n\n  »  **Perintah :** `{cmd}ebow`\
+        \n  »  **Kegunaan : **Awas Salting.\
     "
     }
 )
