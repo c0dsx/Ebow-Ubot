@@ -64,7 +64,7 @@ async def _(ping):
     await Ayiin.edit("**𝙀𝘽𝙊𝙒-𝙐𝙎𝙀𝙍𝘽𝙊**")
     await Ayiin.edit("**𝙀𝘽𝙊𝙒-𝙐𝙎𝙀𝙍𝘽𝙊𝙏**")
     end = datetime.now()
-    duration = (end - start).microseconds / 1000
+    duration = (end - start).microseconds / 500
     user = await ping.client.get_me()
     await Ayiin.edit("⚡")
     sleep(3)
@@ -79,7 +79,7 @@ async def _(ping):
     )
 
 
-@ayiin_cmd(pattern="ebow$")
+@ayiin_cmd(pattern="xping$")
 async def _(xping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
