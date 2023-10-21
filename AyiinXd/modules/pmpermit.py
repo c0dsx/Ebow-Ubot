@@ -78,7 +78,7 @@ async def permitpm(event):
                         await Ayiin.send_message(var.BOTLOG_CHATID, f"**#AUTO_APPROVED_DEVELOPER**\n\n👑 **Developer:** [{sender.first_name}](tg://user?id={sender.id})\n💬 `Developer Ayiin-Userbot Telah Mengirimi Anda Pesan...`")
                         await Ayiin.send_message(
                             event.chat_id,
-                            f"**Menerima Pesan!!!**\n**Terdeteksi [{sender.first_name}](tg://user?id={sender.id}) Adalah Developer Ayiin-Userbot**"
+                            f"**Menerima Pesan!!!**\n**Terdeteksi [{sender.first_name}](tg://user?id={sender.id}) Adalah Developer Ebow-Userbot**"
                         )
                         return
                     except BaseException as e:
