@@ -180,7 +180,7 @@ async def amireallyalive(alive):
     await alive.edit("😈")
     await asyncio.sleep(3)
     output = (
-        f"**[𝗘𝗯𝗼𝘄 - 𝗨𝘀𝗲𝗿𝗯𝗼𝘁](https://github.com/c0dsx/Ebow-Userbot) 𝗣𝗿𝗲𝘀𝗲𝗻𝘁**\n\n"
+        f"❏ 𝗧𝗛𝗘**[𝗘𝗕𝗢𝗪 - 𝗨𝗦𝗘𝗥𝗕𝗢𝗧](https://github.com/c0dsx/Ebow-Userbot) 𝗣𝗥𝗘𝗦𝗘𝗡𝗧**\n\n"
         f"**ʜᴇʏ, sᴀʏᴀ ᴘᴇɴɢɢᴜɴᴀ ᴇʙᴏᴡ-ᴜsᴇʀʙᴏᴛ**\n\n"
         f"• **ᴇʙᴏᴡ ᴠᴇʀsɪᴏɴ :** `{var.BOT_VER}`\n"
         f"• **ʙᴏᴛ ᴜᴘᴛɪᴍᴇ :** `{uptime}`\n"
