@@ -64,7 +64,7 @@ async def _(ping):
     await Ayiin.edit("**𝙀𝘽𝙊𝙒-𝙐𝙎𝙀𝙍𝘽𝙊**")
     await Ayiin.edit("**𝙀𝘽𝙊𝙒-𝙐𝙎𝙀𝙍𝘽𝙊𝙏**")
     end = datetime.now()
-    duration = (end - start).microseconds / 500
+    duration = (end - start).microseconds / 3000
     user = await ping.client.get_me()
     await Ayiin.edit("⚡")
     sleep(3)
